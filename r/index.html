@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Đang chuyển hướng</title>
-    <meta name="robots" content="noindex, follow">
+    <meta name="robots" content="index,follow">
     <link rel="stylesheet" type="text/css" href="../css/chuyen-huong.css">
     <script type="text/javascript">
       var urlRedirect = new URL(location.href).searchParams.get("url");
@@ -30,16 +30,15 @@
  <div id="redirect-page-content"  style="width: 100%; background:#fff; height: 100%; margin: 50px 0px 30px 0px; text-align: center; font-size: 18px;">
         <div class="redirect-message">
                 <img src="../images/chuyen-huong.png" alt="" />
-        <p style="font-size: 95%;margin: 8px !important; color: #191919;">Bạn đang chuyển hướng đến:</p>
+        <p style="font-size: 95%;margin: 8px !important; color: #191919;">Bạn đang được chuyển tới:</p>
         <strong style="margin: 8px !important;" id ="textRedirect"></strong>
          <p style="font-size: 90%;margin: 8px 0px 15px 0px !important;color: #191919;"><!-- (Tự động chuyển sau <span style="color: red" id="timer"></span> giây) --> </p>
           <button class="chuyenhuong" style="margin: 0px 10px 0px 0px;background: #009966; border: 1px solid #009966; color: #fff; cursor: pointer; font-family: 'Oswald', arial, serif !important;
             font-size: 13px ;  font-weight: bold ; padding: 5px 15px;text-decoration: none;text-transform: uppercase;text-shadow: none; height: 45px;
         "onclick="window.location.href=affLink">✓ CHUYỂN TỚI LUÔN<span style="color: yellow" id="timer"></span></button>
-        <!-- <button class="chuyenhuong" style="background: #033; border: 1px solid #033; color: #fff; cursor: pointer; font-family: 'Oswald', arial, serif !important;
-            font-size: 13px ;  font-weight: bold ; margin-bottom: 10px;padding: 5px 15px;text-decoration: none;text-transform: uppercase;text-shadow: none;
-        " onclick="self.close()">✘ Hủy bỏ</button> <br />  -->
-
+        <button class="chuyenhuong" style="margin: 0px 10px 0px 0px;background: #ff0000; border: none; cursor: pointer; font-family: 'Oswald', arial, serif !important;
+            font-size: 13px ;  font-weight: bold ; padding: 5px 15px;text-decoration: none;text-transform: uppercase;text-shadow: none; height: 45px;
+        "onclick="window.history.back()">Huỷ<span style="color: yellow" id="timer"></span></button>
                 </div>
  </div>
 
